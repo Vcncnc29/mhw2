@@ -1,0 +1,92 @@
+/* TODO: inserite il CSS necessario per completare il MHW! */
+.choice-grid{
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+      
+  
+}
+[data-question-id="one"],
+[data-question-id="two"],
+[data-question-id="three"]{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border :1px solid #dcdcdc;
+    background-color: #fafafa;
+    padding:10px 10px 10px 10px;
+}
+img{
+    width:200px;
+    height: 200px;
+
+}
+
+
+.premuto{   
+    background-color: #cfe3ff;
+    
+}
+.no_premuto{    
+    opacity: .6;
+}
+
+footer{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;   
+    margin-top:40px;
+    margin-bottom:20px;
+    width:700px;
+    
+}
+.conteiner{
+    margin:20px;
+}
+.hidden{
+    display: none;
+}
+p.t{
+    margin-top: 0;
+    font-size:40px;
+}
+#contenuto{
+    
+   margin-top:18px;
+   margin-bottom: 18px;
+}
+button{
+    font-size: 40px;
+    width:100%;
+    height: 50px;
+}
+#b:hover{
+    background-color: #e0e0e0;
+}
+
+@media(max-width: 700px){
+    article{
+        width:95%;
+    }
+    header div span{
+        display: none;
+    }
+  }
+@media(device-width:400px) {
+      .choice-grid div{
+          width: 15px;
+          display: none;
+      }
+      
+  }
+  @media(max-width:500px){
+    .choice-grid div{
+      width: 49%;    
+    }
+    img{
+        width: 100%;
+    }
+   
+  }
